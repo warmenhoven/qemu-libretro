@@ -25,7 +25,7 @@ fi
 
 case "$platform" in
     unix)
-        pip install tomli
+        pip install tomli distlib
         LIB_EXT=so
         if [ "$(uname -m)" = "x86_64" ]; then
             EXTRA_CONFIGURE_ARGS=("--enable-kvm")
